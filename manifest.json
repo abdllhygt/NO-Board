@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "NO Board",
+  "version": "0.4",
+
+  "description": "Keyboard for Arabic, Turkish, Japanese, Esperanto",
+
+  "icons": {
+    "48": "icons/noicon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery.min.js", "noboard.js"]
+    }
+  ],
+
+  "permissions": [
+  "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/noiconS.png",
+      "32": "icons/noicon.png"
+    },
+    "default_title": "NO Board",
+    "default_popup": "popup.html",
+    "default_title": "Check to see if our code is on this page"
+  }
+
+}
