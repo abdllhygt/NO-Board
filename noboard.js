@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   btnEo.onclick = function(){
     eo();
   }
+  var btnAr = document.getElementById("btnAr");
+  btnAr.onclick = function(){
+    ar();
+  }
   var btnJp = document.getElementById("btnJp");
   btnJp.onclick = function(){
     jp();
@@ -69,6 +73,54 @@ function eo(){
       this.value = this.value.replace(/sx/g, "ŝ");
       this.value = this.value.replace(/ş/g, "ŝ");
   });
+}
+
+function ar(){
+  $("input[type=text]").keypress(function (evt) {
+      this.value = this.value.replace(/E/g, "أ");
+      this.value = this.value.replace(/e/g, "ا");
+
+      this.value = this.value.replace(/b/g, "ب");
+      this.value = this.value.replace(/t/g, "ت");
+      this.value = this.value.replace(/ts/g, "ث");
+
+      this.value = this.value.replace(/c/g, "ج");
+      this.value = this.value.replace(/j/g, "ج");
+      this.value = this.value.replace(/h/g, "ح");
+      this.value = this.value.replace(/x/g, "خ");
+
+      this.value = this.value.replace(/d/g, "د");
+      this.value = this.value.replace(/Z/g, "ذ");
+      this.value = this.value.replace(/r/g, "ر");
+      this.value = this.value.replace(/z/g, "ز");
+
+      this.value = this.value.replace(/s/g, "س");
+      this.value = this.value.replace(/ş/g, "ش");
+      this.value = this.value.replace(/sh/g, "ش");
+      this.value = this.value.replace(/S/g, "ص");
+      this.value = this.value.replace(/D/g, "ض");
+      this.value = this.value.replace(/T/g, "ط");
+      this.value = this.value.replace(/Z/g, "ظ");
+
+      this.value = this.value.replace(/a/g, "ع");
+      this.value = this.value.replace(/G/g, "غ");
+      this.value = this.value.replace(/ğ/g, "غ");
+
+      this.value = this.value.replace(/f/g, "ف");
+      this.value = this.value.replace(/K/g, "ق");
+      this.value = this.value.replace(/g/g, "ق");
+      this.value = this.value.replace(/k/g, "ك");
+
+      this.value = this.value.replace(/L/g, "ل");
+      this.value = this.value.replace(/m/g, "م");
+      this.value = this.value.replace(/n/g, "ن");
+
+      this.value = this.value.replace(/v/g, "و");
+      this.value = this.value.replace(/u/g, "و");
+      this.value = this.value.replace(/y/g, "ي");
+      this.value = this.value.replace(/i/g, "ي");
+  });
+
 }
 
 function jp(){
